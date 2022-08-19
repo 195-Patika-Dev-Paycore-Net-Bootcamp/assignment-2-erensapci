@@ -24,6 +24,7 @@ namespace BootcampStaffApi.Controllers
             }
         };
 
+        //Where the get method is executed
         [HttpGet]
         public List<Staff> GetStaffs()
         {
@@ -31,6 +32,7 @@ namespace BootcampStaffApi.Controllers
             return staffList;
         }
 
+        //Where the Get method is executed according to the Id data
         [HttpGet("{id}")]
         public Staff GetById(int id)
         {
@@ -38,6 +40,7 @@ namespace BootcampStaffApi.Controllers
             return staff;
         }
 
+        //The part where the data is added with the post method
         [HttpPost]
         public ActionResult AddStaff([FromBody] Staff newStaff)
         {
@@ -46,7 +49,7 @@ namespace BootcampStaffApi.Controllers
             StaffList.Add(newStaff);
             return Ok();
         }
-
+        //Method to update the old data
         [HttpPut("{id}")]
         public IActionResult UpdateStaff(int id, [FromBody] Staff updatedStaff)
         {
@@ -59,7 +62,7 @@ namespace BootcampStaffApi.Controllers
 
             return Ok(staff);
         }
-
+        //the method we use to delete data
         [HttpDelete("{id}")]
         public IActionResult DeleteStaff(int id)
         {
