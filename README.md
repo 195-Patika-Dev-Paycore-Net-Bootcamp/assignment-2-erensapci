@@ -1,5 +1,4 @@
 # assignment-2-erensapci Staff API
-assignment-2-erensapci created by GitHub Classroom
 
 In this project, an example of an API where staff using basic HTTP methods can be added, removed and updated has been implemented.
 
