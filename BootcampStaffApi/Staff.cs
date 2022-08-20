@@ -18,7 +18,7 @@ namespace BootcampStaffApi
         public DateTime DateOfBirth { get; set; }
         
         //The part where the Email is validated with regular expression
-        [RegularExpression(@"^[a-zA-Z0-9!@#\$%\^\&*\)\(+=_-]+$")]
+        [RegularExpression(@"^[a-zA-Z0-9!@#\$%\&*\)\(_-=+]+$")]
         public string Email { get; set; }
         
         //The part where the Phone number is validated with regular expression
